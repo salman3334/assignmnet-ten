@@ -1,11 +1,8 @@
+import { RouterProvider } from "react-router-dom";
+import router from "./routes/Routes";
+
 const App = () => {
-  return (
-    <div className="max-w-7xl mx-auto">
-      <h2 className="text-center text-3xl font-semibold mt-5">
-        Auction Gallery
-      </h2>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;

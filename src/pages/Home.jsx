@@ -1,13 +1,8 @@
-import React, { useContext } from "react";
-import { AuthContext } from "../context/AuthProvider";
-
 const Home = () => {
-  const { user } = useContext(AuthContext);
-
   return (
-    <div>
-      <h2 className="text-2xl font-bold mb-4">Welcome to AuctionGallery</h2>
-      {user ? <p>Hello, {user.displayName || user.email}</p> : <p>Please login or register</p>}
+    <div className="p-6 text-center">
+      <h1 className="text-3xl font-bold">Welcome to HomeHero</h1>
+      <p className="mt-3 text-lg">Your local household service finder.</p>
     </div>
   );
 };
